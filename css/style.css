@@ -1,0 +1,410 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+
+body{
+    background-color:  #1f1f21;
+    height: 100vh;  
+   
+}
+ 
+
+.flex{
+    display: flex;
+    
+}
+
+/* ESTILO DO LOGO */
+
+/* .logo img {
+    width: 60px; 
+    border-radius: 50%; 
+    max-width: 400px;
+
+} */
+
+.logo{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    transition: .3s;
+
+
+}
+
+.logo span{
+    color: #014496;
+    font-size: 50px;
+    font-weight: bold;
+    transition: .3s;
+
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+
+header{
+    padding: 40px 4%;
+
+}
+
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Estilo para o menu de navegação */
+header .menu-desktop {
+    display: flex;
+    justify-content: center; 
+
+}
+header .menu-desktop a.active{
+    color: #014496; /* Cor do texto quando o link está ativo */
+    font-size: 25px; /* Tamanho da fonte */
+    border-bottom: 2px solid #014496; /* Adiciona um traço abaixo do link ativo */
+    padding-bottom: 4px; /* Espaço entre o texto e o traço */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+
+}
+
+header .menu-desktop > ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex; 
+}
+
+header .menu-desktop > ul > li {
+    margin: 0 50px; 
+    position: relative; 
+}
+
+/* Estilo para links de navegação */
+header .menu-desktop a {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7px;
+    text-decoration: none;
+    position: relative;
+    height: 100%;
+    font-weight: bold;
+    transition: .3s;
+    font-size: 25px;
+}
+
+/* Estilo para links de navegação ao passar o mouse */
+header .menu-desktop > ul > li:hover > a {
+    color: #014496;
+    text-decoration: none;
+    transform: scale(1.2);
+    font-size: 25px;
+    
+}
+
+/* Estilo para a linha de destaque dos links de navegação ao passar o mouse */
+header .menu-desktop > ul > li:hover > a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #0352b3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    visibility: visible;
+    scale: 1 1;
+    font-size: 25px;
+    
+}
+
+/* ESTILO DO BOTÃO DE CONTATO */
+
+header .btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 700px;
+    background-color: #014496;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+header .btn-contato button:hover{
+    box-shadow: 0px 0px 8px #014496;
+    transform: scale(1.1);
+}
+
+/* ESTILO TOPO SITE */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site .txt-topo-site .cargo{
+    padding: 2px 20px;
+    background: linear-gradient(130.08deg, #1f1f21 0%, #014496 100%);
+    box-shadow: 0px 20px 40px #00000070;
+    border: 1px solid #3b3b3b;
+    border-radius: 10px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.topo-do-site h1{
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 40px;
+    margin: 10px 0;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #0352b3;
+    
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 18px;
+}
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar-img 2s ease-in-out infinite alternate;
+    border-radius: 50%; /* Deixa a imagem circular */
+    max-width: 400px;
+    height: auto;
+}
+
+@keyframes flutuar-img{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+
+
+section .btn button{
+    display: inline-block;
+    padding: 5px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #014496;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+
+
+}
+
+section .btn {
+    display: flex;
+    gap: 15px; 
+}
+
+/* section.topo-do-site .txt-topo-site .btn img{
+    align-items: center;
+    padding: 0 2px;
+} */
+
+
+/* section.topo-do-site .txt-topo-site .btn button:hover{
+    box-shadow: 0px 0px 8px #014496;
+    transform: scale(1.1);
+} */
+
+
+section button:hover{
+    transform: translateY(-5px);
+    color: #ffffff;
+    background-color: #014496;
+    border: 2px solid #ffffff;
+
+}
+
+.topo-do-site .txt-topo-site p a{
+    color: #0352b3;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+section.topo-do-site .txt-topo-site .social-logos {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px; 
+    justify-content: left; 
+}
+
+section.topo-do-site .txt-topo-site .social-logos img {
+    width: 50px; 
+    height: auto;
+    cursor: pointer;
+}
+
+/* ESTILO SKILLS */
+
+.skills h2 {
+    display: flex;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 40px;
+    margin-bottom: 5px; 
+}
+
+section.skills .txt-skills {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    max-width: 800px; 
+    gap: 10px;
+}
+
+section.skills .txt-skills .skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px; 
+    text-align: center;
+}
+
+section.skills .txt-skills .skill img {
+    width: 50px; 
+    height: auto;
+    margin-bottom: 5px; 
+    background-color: transparent;
+}
+
+section.skills {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    background-color: #2b2b2e; 
+    border-radius: 5px;
+    padding: 20px;
+    width: 80%; 
+    max-width: 1300px;
+    box-shadow: 0 1px 5px #014496; 
+    margin: 0 auto; 
+}
+
+.skill p {
+    font-size: 18px; 
+    color: #ffffff; 
+    margin: 0; 
+    padding: 0; 
+    white-space: nowrap;
+}
+
+
+/* ESTILO PAGINA PORTFOLIO */
+
+section.portfolio h2 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 50px;
+    justify-content: center; 
+    display: flex;
+}
+
+section.portfolio span{
+    color: #014496;
+}
+
+.titulo {
+    color: #ffffff;
+    font-size: 30px;
+    margin: 1px;
+    padding: 10px;
+    justify-content: left; 
+    font-weight: bold;
+}
+
+.descicao {
+    margin: 5px 0;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+
+section.portfolio .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+section.portfolio .projetos {
+    background-color: #2b2b2e;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px ;
+    max-width: 1300px;
+}
+
+section.portfolio .projetos-imagem {
+    max-width: 500px; 
+}
+
+section.portfolio .projetos {
+    background-color: #2b2b2e;
+    display: flex;
+    margin-bottom: 10px;
+    padding: 10px;
+    max-width: 1300px;
+    position: relative; 
+}
+section.portfolio .tech-logos {
+    display: flex;
+    position: absolute; 
+    top: 20px; 
+    right: 10px; /* Distância da borda direita do container */
+    align-items: center;
+    padding: 0;
+}
+
+
+section.portfolio .btn {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+section.portfolio .tech-logos img {
+    height: 50px;
+    margin-right: 10px;
+
+}
