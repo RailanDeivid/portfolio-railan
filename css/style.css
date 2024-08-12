@@ -129,6 +129,75 @@ header .menu-desktop > ul > li:hover > a::before {
     
 }
 
+/* ESTILO MENU MOBILE */
+
+.menu-mobile{
+    background-color: #1f1f21;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
+    
+}
+
+.menu-mobile.abrir-menu{
+    width: 50%;
+    
+}
+
+.menu-mobile.abrir-menu  ~ .overlay-menu{
+    display: block;
+    
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+    list-style-type: none;
+    
+}
+
+.menu-mobile nav li a{
+    color: #014496;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px 10%;
+    text-decoration: none;
+    display: block;
+    transition: .3s;
+    
+}
+
+.menu-mobile nav li a:hover{
+    color: #014496;
+    text-decoration: none;
+    transform: scale(1.1);
+}
+
+.menu-mobile .btn-fechar img{
+    margin: 20px;
+}
+
+.btn-abri-menu img{
+    width: 0%;
+}
+
+.overlay-menu{
+    background-color: #000000df;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+
+
+
 /* ESTILO DO BOTÃO DE CONTATO */
 
 header .btn-contato button{
@@ -260,12 +329,14 @@ section.topo-do-site .txt-topo-site .social-logos {
     display: flex;
     gap: 10px; 
     justify-content: left; 
+
 }
 
 section.topo-do-site .txt-topo-site .social-logos img {
     width: 50px; 
     height: auto;
     cursor: pointer;
+
 }
 
 section.topo-do-site .txt-topo-site .social-logos img:hover{
@@ -422,3 +493,107 @@ section.portfolio .tech-logos img {
     margin-right: 10px;
 
 }
+
+/* Estilos gerais para dispositivos maiores (desktop) */
+@media screen and (max-width: 1020px) {
+
+    /* Header */
+    header .interface {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .menu-desktop {
+        flex-direction: column;
+        text-align: center;
+        z-index: 99999999;
+        width: 0%;
+        overflow: hidden;
+        display: none;
+    }
+
+    header .menu-desktop a {
+        font-size: 20px;
+    }
+
+    header .btn-contato button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin: 20px;
+        display: none;
+    }
+
+    /* MENU MOBILE */
+
+    .btn-abri-menu {
+        top: 60px; /* Distância do topo da tela */
+        right: 10px; /* Distância da borda direita da tela */
+    }
+    
+    .btn-abri-menu img {
+        width: 40px; /* Tamanho do ícone */
+        height: 40px;
+    }
+
+    /* Topo do Site */
+    section.topo-do-site .flex {
+        flex-direction: column-reverse;
+        gap: 50px;
+    }
+
+    .topo-do-site h1 {
+        font-size: 32px;
+    }
+
+    .topo-do-site .txt-topo-site .cargo{
+        font-size: 18px;
+
+    }
+
+    .topo-do-site .img-topo-site img {
+        max-width: 300px;
+        margin: 10px;
+    }
+
+    /* Skills */
+    section.skills .txt-skills {
+        flex-wrap: wrap;
+    }
+
+    section.skills .txt-skills .skill {
+        width: 80px;
+        margin: 0 auto 5px auto;
+    }
+
+    section.skills .txt-skills .skill p {
+        font-size: 14px;
+    }
+
+    /* Portfolio */
+    section.portfolio .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.portfolio .projetos {
+        flex-direction: column;
+        align-items: center;
+        max-width: 90%;
+    }
+
+    section.portfolio .projetos-imagem {
+        max-width: 100%;
+    }
+
+    section.portfolio h2 {
+        color: #ffffff;
+        font-size: 30px;
+        margin: 40px;
+        justify-content: center; 
+        display: flex;
+    }
+    
+    section.portfolio span{
+        color: #014496;
+    }
+} 
