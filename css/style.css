@@ -35,9 +35,8 @@ body{
     text-decoration: none;
     font-family: "Rubik", sans-serif;
     transition: .3s;
-
-
 }
+
 
 .logo span{
     color: #014496;
@@ -145,7 +144,7 @@ header .menu-desktop > ul > li:hover > a::before {
 }
 
 .menu-mobile.abrir-menu{
-    width: 50%;
+    width: 60%;
     
 }
 
@@ -217,6 +216,68 @@ header .btn-contato button:hover{
     box-shadow: 0px 0px 8px #014496;
     transform: scale(1.1);
 }
+
+/* ESTILO DO FORMULARIO */
+section.formulario{
+    padding: 70px 4%;
+
+}
+
+section.formulario h2 {
+    color: #ffffff;
+    font-size: 30px;
+    justify-content: center; 
+    display: flex;
+}
+
+section.formulario span{
+    color: #014496;
+}
+
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #242424;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form textarea{
+    resize: none;
+    max-height: 400px;
+}
+
+form .btn-enviar{
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #014496;
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}
+
+form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #014496;
+    transform: scale(1.1);
+}
+
 
 /* ESTILO TOPO SITE */
 
@@ -497,6 +558,10 @@ section.portfolio .tech-logos img {
 /* Estilos gerais para dispositivos maiores (desktop) */
 @media screen and (max-width: 1020px) {
 
+    body.no-overflow{
+        overflow: hidden;
+    }
+
     /* Header */
     header .interface {
         flex-direction: column;
@@ -596,4 +661,39 @@ section.portfolio .tech-logos img {
     section.portfolio span{
         color: #014496;
     }
+
+    section.portfolio .btn{
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    section.portfolio .btn button {
+        font-size: 16px; 
+    }
+    
+
+    section.portfolio .tech-logos {
+        position: absolute; 
+        opacity: 50%;
+
+    }
+
+    /* FORMULARIO */
+    form{
+        max-width: 400px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    form .btn-enviar input{
+        width: 100px;
+        background-color: #014496;
+        color: #ffffff;
+        font-weight: 700;
+    }
+    
 } 
