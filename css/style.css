@@ -199,7 +199,7 @@ header .menu-desktop > ul > li:hover > a::before {
 
 /* ESTILO DO BOTÃO DE CONTATO */
 
-header .btn-contato button{
+/* header .btn-contato button{
     padding: 10px 40px;
     font-size: 18px;
     font-weight: 700px;
@@ -217,7 +217,6 @@ header .btn-contato button:hover{
     transform: scale(1.1);
 }
 
-/* ESTILO DO FORMULARIO */
 section.formulario{
     padding: 70px 4%;
 
@@ -276,7 +275,7 @@ form .btn-enviar input{
 form .btn-enviar input:hover{
     box-shadow: 0px 0px 8px #014496;
     transform: scale(1.1);
-}
+} */
 
 
 /* ESTILO TOPO SITE */
@@ -554,6 +553,8 @@ section.portfolio .tech-logos img {
     margin-right: 10px;
 
 }
+
+
 
 /* Estilos gerais para dispositivos maiores (desktop) */
 @media screen and (max-width: 1020px) {
