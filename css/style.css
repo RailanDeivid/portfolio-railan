@@ -619,6 +619,7 @@ section.portfolio .tech-logos img {
     .topo-do-site .img-topo-site img {
         max-width: 300px;
         margin: 10px;
+
     }
 
     /* Skills */
@@ -696,5 +697,7 @@ section.portfolio .tech-logos img {
         color: #ffffff;
         font-weight: 700;
     }
+
+
     
 } 
