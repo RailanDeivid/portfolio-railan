@@ -22,3 +22,21 @@ overlay.addEventListener('click', ()=> {
 
 
 
+let currentProjectIndex = 0;
+
+function navigate(direction) {
+    const projects = document.querySelectorAll('.portfolio-container .projetos');
+    const totalProjects = projects.length;
+
+    projects[currentProjectIndex].style.display = 'none'; // Esconde o projeto atual
+    currentProjectIndex = (currentProjectIndex + direction + totalProjects) % totalProjects;
+    projects[currentProjectIndex].style.display = 'flex'; // Mostra o novo projeto
+}
+
+// Inicializa mostrando apenas o primeiro projeto
+document.addEventListener('DOMContentLoaded', function() {
+    const projects = document.querySelectorAll('.portfolio-container .projetos');
+    projects.forEach((project, index) => {
+        project.style.display = index === 0 ? 'flex' : 'none';
+    });
+});
