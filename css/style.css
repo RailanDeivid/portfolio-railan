@@ -460,6 +460,7 @@ section.skills {
     max-width: 1300px;
     box-shadow: 0 1px 5px #014496; 
     margin: 0 auto; 
+    margin-bottom: 5%;
 }
 
 section.skills .txt-skills .skill p {
@@ -883,7 +884,7 @@ section .descrição {
 
 
 /* Estilos gerais para dispositivos maiores (desktop) */
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1080px) {
 
     body.no-overflow{
         overflow: hidden;
