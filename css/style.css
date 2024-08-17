@@ -846,6 +846,7 @@ section.posts span{
     color: #014496;
 }
 section .container {
+    background-color: #2b2b2e;
     padding: 80px;
     max-width: 1300px;
     width: 1300px; 
@@ -854,7 +855,7 @@ section .container {
     display: flex;
     justify-content: center;
     border-radius: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 section .post {
     width: 60%; /* Ajuste o tamanho conforme necessário */
