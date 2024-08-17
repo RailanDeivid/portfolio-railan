@@ -516,19 +516,7 @@ section.portfolio .portfolio-container {
 }
 
 section.portfolio .projetos {
-    background-color: #2b2b2e;
-    display: flex;
-    margin-bottom: 10px;
-    padding: 10px ;
-    max-width: 1300px;
-}
-
-section.portfolio .projetos-imagem {
-    max-width: 500px; 
-}
-
-section.portfolio .projetos {
-    background-color: #2b2b2e;
+    background-color: #2b2b2e4d;
     display: flex;
     margin-bottom: 10px;
     padding: 10px;
@@ -536,6 +524,10 @@ section.portfolio .projetos {
     position: relative;
     margin: 20px; 
 }
+section.portfolio .projetos-imagem {
+    max-width: 500px; 
+}
+
 section.portfolio .tech-logos {
     display: flex;
     position: absolute; 
@@ -586,14 +578,16 @@ section.portfolio .projetos .projetos-detalhes h3 {
     font-size: 20px;
     margin-bottom: 175px;
 } */
+
+
+
 section.portfolio .btn {
     display: flex;
     justify-content: center;
     gap: 30px;
     margin-top: 0px;
+    
 }
-
-
 
 
 
@@ -631,7 +625,7 @@ section.portfolio-preview .container-maior {
     max-width: 1200px; /* Limite máximo para a largura */
     position: relative;
     padding: 20px; /* Espaço interno da caixa maior */
-    background-color: #2b2b2e; /* Cor de fundo para a caixa maior */
+    background-color: #2b2b2e4d; /* Cor de fundo para a caixa maior */
     border-radius: 10px; /* Bordas arredondadas para a caixa maior (opcional) */
 }
 
@@ -672,7 +666,6 @@ section.portfolio-preview .nav-button:hover {
 
 
 section.portfolio-preview .projetos {
-    background-color: #2b2b2e;
     display: flex;
     margin-bottom: 10px;
     padding: 10px;
@@ -846,7 +839,7 @@ section.posts span{
     color: #014496;
 }
 section .container {
-    background-color: #2b2b2e;
+    background-color: #2b2b2e4d;
     padding: 80px;
     max-width: 1300px;
     width: 1300px; 
@@ -1097,7 +1090,7 @@ section .descrição {
         margin-bottom: 50px;
         align-items: center; /* Centraliza o conteúdo horizontalmente */
         border-radius: 10px;
-        background-color: #2b2b2e;
+        background-color: #2b2b2e4d;
         flex-direction: column-reverse;
     }
     
