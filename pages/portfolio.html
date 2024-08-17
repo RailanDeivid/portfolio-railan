@@ -23,7 +23,7 @@
                 <ul>
                     <li><a href="../index.html">Sobre</a></li>
                     <li><a href="Portfolio.html" class="active">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
             <!-- <div class="btn-contato">
@@ -34,23 +34,11 @@
             <div class="btn-abri-menu" id="btn-menu">
                 <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=014496" alt="">
             </div>
-            <div class="menu-mobile" id="menu-mobile">
-                <div class="btn-fechar">
-                    <img src="https://img.icons8.com/?size=30&id=95771&format=png&color=014496" alt="">
-                </div>
-                <nav>
-                    <ul>
-                        <li><a href="../index.html" class="active">Sobre</a></li>
-                        <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </nav>
-            </div><!-- menu-mobile -->
         </div><!-- interface -->
     </header>
     <main>
         <section class="portfolio">
-            <h2>MEU PORTFOLIO<span>.</span></h2>
+            <h2>PRINCIPAIS PROJETOS<span>.</span></h2>
             <!-- PROJETO 1 -->
             <div class="portfolio-container">
                 <div class="projetos">
@@ -75,43 +63,162 @@
                         </div><!-- btn -->
                     </div>
                 </div>
-            </div>
             <!-- PROJETO 2 -->
-            <div class="portfolio-container">
-                <div class="projetos">
-                    <img src="../img/img-projetos/MercadoLivre_Scraper_and_CarPricePredictor.png" alt="Imagem do Projeto" class="projetos-imagem-02">
-                    <div class="projetos-detalhes">
-                        <p class="titulo"> Scraping anuncios de veículos <br> do MercadoLivre e previsão de preço de vendas.
-                
-                        </p>
-                        <p class="descicao">Este projeto realiza web scraping de anúncios de veículos no Mercado Livre e a previsão de valores de venda utilizando um modelo de machine learning. As etapas incluem a coleta de dados por meio de técnicas de web scraping, seguida pela transformação e limpeza dos dados para garantir consistência e adequação ao modelo. Em seguida, é realizada uma análise exploratória para identificar padrões e tendências que possam influenciar os preços dos veículos. Em seguida foi desenvolvido e treinado um modelo de machine learning para prever os valores de venda com base nas características extraídas dos anúncios, e por fim o deploy do modelo usando Streamlit.
-                        <br><br>
-                        </p>
-                        <!-- <h3>Etapas do projeto:</h3>
-                        <ul>
-                            <li>Scrape dos dados</li>
-                            <li>Tratamento e armazenamento em um banco de dados</li>
-                            <li>EDA</li>
-                            <li>Modelagem</li>
-                            <li>Deploy Streamlit</li>
-                        </ul> -->
-                        <div class="tech-logos">
-                            <img src="../img/img-logos/python.png" alt="Python" >
-                            <img src="../img/img-logos/Streamlit.png" alt="Streamlit">
-                            <img src="../img/img-logos/sqlite.png" alt="sqlite" class="sqlite">
-                        </div>
-                        <div class="btn">
-                            <a href="https://carprice-predicto.streamlit.app/" target="_blank" >
-                                <button>Ver Projeto</button>
-                            </a>
-                            <a href="https://github.com/RailanDeivid/MercadoLivre_Scraper_and_CarPricePredictor" target="_blank">
-                                <button>&lt; Repositório /&gt;</button>
-                            </a>
-                        </div><!-- btn -->
+            <div class="projetos">
+                <img src="../img/img-projetos/MercadoLivre_Scraper_and_CarPricePredictor.png" alt="Imagem do Projeto" class="projetos-imagem-02">
+                <div class="projetos-detalhes">
+                    <p class="titulo"> Scraping anuncios de veículos <br> do MercadoLivre e previsão de preço de vendas.
+            
+                    </p>
+                    <p class="descicao">Este projeto realiza web scraping de anúncios de veículos no Mercado Livre e a previsão de valores de venda utilizando um modelo de machine learning. As etapas incluem a coleta de dados por meio de técnicas de web scraping, seguida pela transformação e limpeza dos dados para garantir consistência e adequação ao modelo. Em seguida, é realizada uma análise exploratória para identificar padrões e tendências que possam influenciar os preços dos veículos. Em seguida foi desenvolvido e treinado um modelo de machine learning para prever os valores de venda com base nas características extraídas dos anúncios, e por fim o deploy do modelo usando Streamlit.
+                    <br><br>
+                    </p>
+                    <!-- <h3>Etapas do projeto:</h3>
+                    <ul>
+                        <li>Scrape dos dados</li>
+                        <li>Tratamento e armazenamento em um banco de dados</li>
+                        <li>EDA</li>
+                        <li>Modelagem</li>
+                        <li>Deploy Streamlit</li>
+                    </ul> -->
+                    <div class="tech-logos">
+                        <img src="../img/img-logos/python.png" alt="Python" >
+                        <img src="../img/img-logos/scrapy-logo.png" alt="Scrapy">
+                        <img src="../img/img-logos/Streamlit.png" alt="Streamlit">
+                        <img src="../img/img-logos/sqlite.png" alt="sqlite" class="sqlite">
                     </div>
+                    <div class="btn">
+                        <a href="https://carprice-predicto.streamlit.app/" target="_blank" >
+                            <button>Ver Projeto</button>
+                        </a>
+                        <a href="https://github.com/RailanDeivid/MercadoLivre_Scraper_and_CarPricePredictor" target="_blank">
+                            <button>&lt; Repositório /&gt;</button>
+                        </a>
+                    </div><!-- btn -->
                 </div>
-            </div>  
+            </div><!-- PROJETO 2 -->
+            <!-- PROJETO 3 -->
+            <div class="projetos">
+                <img src="../img/img-projetos/ceagesp.png" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="projetos-detalhes">
+                    <p class="titulo"> Automatização de Extração de Dados <br> da CEAGESP.
+                    </p>
+                    <p class="descicao">Neste projeto, apresento uma solução desenvolvida para automatizar a extração de dados do site de cotações de preços de entrepostos da CEAGESP. Essa tarefa manual, que envolvia a obtenção da média de preços de venda no atacado, era realizada às segundas, quartas e sextas-feiras, exigindo intervenção manual constante.
+                    <br><br>
+                    O principal objetivo deste processo é capturar as cotações de preços dos entrepostos, permitindo análises futuras sobre os preços no atacado.
+                    </p>
+                    <!-- <h3>Etapas do projeto:</h3>
+                    <ul>
+                        <li>Scrape dos dados</li>
+                        <li>Tratamento e armazenamento em um banco de dados</li>
+                        <li>EDA</li>
+                        <li>Modelagem</li>
+                        <li>Deploy Streamlit</li>
+                    </ul> -->
+                    <div class="tech-logos">
+                        <img src="../img/img-logos/python.png" alt="Python" >
+                        <img src="../img/img-logos/sqlite.png" alt="sqlite" class="sqlite">
+                        <img src="../img/img-logos/selenium.png" alt="selenium" class="selenium">
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/RailanDeivid/WebScraping_Cotacoes_CEAGESP.git" target="_blank">
+                            <button>&lt; Repositório /&gt;</button>
+                        </a>
+                    </div><!-- btn -->
+                </div>
+            </div><!-- PROJETO 3 -->
+            <!-- PROJETO 4 -->
+            <div class="projetos">
+                <img src="../img/img-projetos/gif-api-youtube.gif" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="projetos-detalhes">
+                    <p class="titulo">Análise Exploratória de Dados da API <br> do YouTube.
+                    </p>
+                    <p class="descicao">
+                        O projeto visa realizar uma análise exploratória de dados utilizando informações de vídeos do YouTube.
+                        este projeto aborda conceitos e técnicas de ciência de dados, aplicando-os especificamente à análise de vídeos na plataforma YouTube.
+                        <br><br>
+                        O objetivo principal é explorar a API do YouTube para obter dados detalhados sobre vídeos e analisar o que influencia o desempenho de um vídeo na plataforma.
+                    </p>
+                    <!-- <h3>Etapas do projeto:</h3>
+                    <ul>
+                        <li>Scrape dos dados</li>
+                        <li>Tratamento e armazenamento em um banco de dados</li>
+                        <li>EDA</li>
+                        <li>Modelagem</li>
+                        <li>Deploy Streamlit</li>
+                    </ul> -->
+                    <div class="tech-logos">
+                        <img src="../img/img-logos/python.png" alt="Python" >
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/RailanDeivid/youtube_api_analysis.git" target="_blank">
+                            <button>&lt; Repositório /&gt;</button>
+                        </a>
+                    </div><!-- btn -->
+                </div>
+            </div><!-- PROJETO 4 -->
+            <!-- PROJETO 5 -->
+            <div class="projetos">
+                <img src="../img/img-projetos/olist.png" alt="Imagem do Projeto" class="projetos-imagem">
+                <div class="projetos-detalhes">
+                    <p class="titulo">Análise exploratória e Dataviz do conjunto de dados Olist.
+                    </p>
+                    <p class="descicao">
+                        Neste projeto, realizo uma análise exploratória de um conjunto de dados sobre comércio eletrônico brasileiro, especificamente sobre pedidos realizados na Olist Store. Utilizando um conjunto de dados público que abrange 100 mil pedidos feitos entre 2016 e 2018, este projeto tem como foco explorar a fundo a visualização de dados.
+                    </p>
+                    <!-- <h3>Etapas do projeto:</h3>
+                    <ul>
+                        <li>Scrape dos dados</li>
+                        <li>Tratamento e armazenamento em um banco de dados</li>
+                        <li>EDA</li>
+                        <li>Modelagem</li>
+                        <li>Deploy Streamlit</li>
+                    </ul> -->
+                    <div class="tech-logos">
+                        <img src="../img/img-logos/python.png" alt="Python" >
+                    </div>
+                    <div class="btn">
+                        <a href="https://railandeivid.medium.com/eda-an%C3%A1lise-explorat%C3%B3ria-e-dataviz-do-conjunto-de-dados-olist-14a2ca83f990" target="_blank" >
+                            <button>Ver Projeto</button>
+                        </a>
+                        <a href="https://github.com/RailanDeivid/EDA_ecommerce_olist_brazil" target="_blank">
+                            <button>&lt; Repositório /&gt;</button>
+                        </a>
+                    </div><!-- btn -->
+                </div>
+            </div><!-- PROJETO 5 -->
+
+
+            </div><!-- portfolio-container -->   
         </section>       
     </main>
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <a href="#" class="logo-footer"><span>R</span>ailan<span>D</span>eivid</a>
+                    </div>
+                    <div class="social-logos">
+                        <a href="https://www.linkedin.com/in/railandeivid/" target="_blank">
+                            <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=ffffff" alt="LinkedIn">
+                        </a>
+                        <a href="https://github.com/RailanDeivid" target="_blank">
+                            <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="GitHub">
+                        </a>
+                        <a class="medium" href="https://medium.com/@railandeivid" target="_blank">
+                            <img src="https://img.icons8.com/?size=35&id=kXpTR7n8QCEP&format=png&color=ffffff" alt="Medium">
+                        </a>
+                    </div><!-- social-logos -->
+            </div>
+
+            <div class="line-footer">
+                <p>
+                    <img src="https://img.icons8.com/?size=30&id=86875&format=png&color=ffffff" alt="" >
+                    <a href="mailto:contato.railandeivid@gmail.com" >contato.railandeivid@gmail.com</a>
+                </p>
+            </div><!-- line-footer -->
+        </div><!-- interface -->
+    </footer>
 </body>
 </html>

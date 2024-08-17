@@ -376,7 +376,7 @@ section button:hover{
 
 }
 
-.topo-do-site .txt-topo-site p a{
+section.topo-do-site .txt-topo-site p a{
     color: #0352b3;
     font-weight: bold;
     text-decoration: none;
@@ -384,7 +384,7 @@ section button:hover{
 }
 
 
-.social-logos {
+section.topo-do-site .social-logos {
     margin-top: 20px;
     display: flex;
     gap: 10px; 
@@ -401,7 +401,7 @@ section.topo-do-site .txt-topo-site .social-logos img {
 
 .social-logos img:hover{
     transform: scale(1.3);
-    transition: .5s;
+    transition: .5s; transition: .5s;
 }
 
 
@@ -476,6 +476,8 @@ section.skills .txt-skills .skill:hover p {
 }
 
 /* ESTILO PAGINA PORTFOLIO */
+
+
 
 section.portfolio h2 {
     color: #ffffff;
@@ -592,6 +594,9 @@ section.portfolio .btn {
 }
 
 
+
+
+
 /* ESTILO PAGINA SOBRE - PORTFOLIO PREVIEW */
 
 section.portfolio-preview h2 {
@@ -653,12 +658,12 @@ section.portfolio-preview .nav-button {
 
 section.portfolio-preview .left-nav {
     left: -50px; 
-    top: 22vh; 
+    top: 15vh; 
 }
 
 section.portfolio-preview .right-nav {
     right: -50px;
-    top: 22vh; 
+    top: 15vh; 
 }
 
 section.portfolio-preview .nav-button:hover {
@@ -709,8 +714,8 @@ section.portfolio-preview .descicao {
 
 section.portfolio-preview .tech-logos {
     display: flex;
-    flex-wrap: wrap; /* Permite que os logos se movam para a linha seguinte, se necessário */
-    gap: 10px; /* Espaço entre os logos */
+    flex-wrap: wrap; 
+    gap: 10px; 
     margin-top: 10px;
 }
 
@@ -807,6 +812,7 @@ section.portfolio-preview .btn button:hover {
 
 footer{
     padding: 10px 4%;
+    margin-top: 10vh;
     box-shadow: 0 0 40px 10px #0144961d;
 }
 
@@ -819,11 +825,66 @@ footer .flex{
     margin-top: 0;
     font-size: 16px;
     color: #ffffff;
+    text-decoration: none;
 }
 
 .line-footer  img {
     vertical-align: middle;
     margin-right: 5px;
+
+}
+
+/* ESTILO PAGINA BLOG */
+section.posts h2 {
+    color: #ffffff;
+    font-size: 50px;
+    margin: 50px;
+    justify-content: center; 
+    display: flex;
+}
+section.posts span{
+    color: #014496;
+}
+section .container {
+    background-color: #2b2b2e;
+    padding: 80px;
+    max-width: 1300px;
+    width: 1300px; 
+    height: 500px; 
+    margin: auto; 
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+section .post {
+    width: 60%; /* Ajuste o tamanho conforme necessário */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 20px;
+    
+}
+section .post h1{
+    color: #ffffff;
+}
+section .image {
+    width: 50%; 
+}
+
+section .image img {
+    max-width: 100%;
+    border-radius: 50px 10px;
+    margin: 20px;
+    margin-bottom: 10px;
+
+}
+
+
+section .descrição {
+    margin-top: 20px;
+    color: #ffffff;
+    margin-bottom: 20px;
 }
 
 
@@ -834,44 +895,34 @@ footer .flex{
     body.no-overflow{
         overflow: hidden;
     }
-
     /* Header */
     header .interface {
         flex-direction: column;
         align-items: center;
     }
-
     header .menu-desktop {
         flex-direction: column;
-        text-align: center;
+        align-items: center;
         z-index: 99999999;
-        width: 0%;
-        overflow: hidden;
-        display: none;
+        width: 100%;
+        display: flex;
     }
-
     header .menu-desktop a {
-        font-size: 20px;
+        font-size: 15px;
     }
-
-    header .btn-contato button {
-        padding: 10px 20px;
-        font-size: 16px;
-        margin: 20px;
-        display: none;
-    }
-
-    /* MENU MOBILE */
-
-    .btn-abri-menu {
-        top: 60px; /* Distância do topo da tela */
-        right: 10px; /* Distância da borda direita da tela */
-    }
+    header .menu-desktop a.active{
+        color: #014496; /* Cor do texto quando o link está ativo */
+        font-size: 15px; /* Tamanho da fonte */
+        border-bottom: 2px solid #014496; /* Adiciona um traço abaixo do link ativo */
+        padding-bottom: 4px; /* Espaço entre o texto e o traço */
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
     
-    .btn-abri-menu img {
-        width: 40px; /* Tamanho do ícone */
-        height: 40px;
     }
+    header .menu-desktop > ul > li {
+        margin: 0 25px; 
+        position: relative; 
+    }
+
 
     /* Topo do Site */
     section.topo-do-site .flex {
@@ -880,21 +931,45 @@ footer .flex{
     }
 
     .topo-do-site h1 {
-        font-size: 32px;
+        font-size: 30px;
+        margin: 10px;
     }
 
     .topo-do-site .txt-topo-site .cargo{
         font-size: 18px;
-
+        margin: 10px;
+    }
+    .topo-do-site .txt-topo-site p{
+        font-size: 15px;
+        margin: 10px;
     }
 
     .topo-do-site .img-topo-site img {
         max-width: 300px;
         margin: 10px;
 
+    } 
+    section .btn button{
+        font-size: 10px;
+        margin: 10px;
+    }
+    section.topo-do-site .social-logos {
+        margin-top: 2px;
+        margin: 10px;
+    }
+    
+    section.topo-do-site .txt-topo-site .social-logos img {
+        width: 30px; 
     }
 
+
+
     /* Skills */
+    section.skills {
+        margin-top: 30px;
+
+    }
+
     section.skills .txt-skills {
         flex-wrap: wrap;
     }
@@ -908,7 +983,7 @@ footer .flex{
         font-size: 14px;
     }
 
-    /* Portfolio */
+    /* ESTILO PORTFOLIO */
     section.portfolio .portfolio-container {
         flex-direction: column;
         align-items: center;
@@ -923,11 +998,14 @@ footer .flex{
     section.portfolio .projetos-imagem {
         max-width: 100%;
     }
+    section.portfolio .projetos-imagem-02 {
+        max-width: 100%;
+    }
 
     section.portfolio h2 {
         color: #ffffff;
         font-size: 30px;
-        margin: 40px;
+        margin: 15px;
         justify-content: center; 
         display: flex;
     }
@@ -953,24 +1031,14 @@ footer .flex{
 
     }
 
-    /* FORMULARIO */
-
-    form{
-        max-width: 400px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 10px;
+    section.portfolio .tech-logos img {
+        height: 40px; /* Ajusta a altura dos logos */
+        width: auto; /* Mantém a proporção dos logos */
+        margin-right: 10px;
+        display: none;
     }
     
-    form .btn-enviar input{
-        width: 100px;
-        background-color: #014496;
-        color: #ffffff;
-        font-weight: 700;
-    }
-
+    
     /* RODAPÉ */
 
     .interface .logo-footer{
@@ -1014,5 +1082,60 @@ footer .flex{
     section.portfolio-preview{
         display: none;
     }
+    
+
+    /* ESTILO PAGINA BLOG */
+
+    section .container {
+        padding: 5px;
+        width: 100%; 
+        max-width: 1300px;
+        width: auto; 
+        height: auto; 
+        margin: auto;
+        display: flex;
+        margin-bottom: 50px;
+        align-items: center; /* Centraliza o conteúdo horizontalmente */
+        border-radius: 10px;
+        background-color: #2b2b2e;
+        flex-direction: column-reverse;
+    }
+    
+    section .post {
+        width: 80%; /* Ajuste a largura conforme necessário */
+        margin-top: 20px;
+    }
+    
+    section .image {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 20px; 
+
+    }
+    
+    section .image img {
+        max-width: 300px;
+        border-radius: 5px;
+    }
+    
+    section .descrição {
+        margin-top: 10px;
+        color: #ffffff;
+    }
+    
+    section.posts h2 {
+        color: #ffffff;
+        font-size: 30px;
+        margin: 15px;
+        justify-content: center; 
+        display: flex;
+    }
+
+    section.posts .post h1 {
+        font-size: 25px;
+        margin: 20px auto;
+    }
+
 
 }
+
