@@ -728,10 +728,10 @@ section.portfolio-preview .tech-logos img {
 section.portfolio-preview .btn {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
-    gap: 10px; /* Espaço entre os botões */
+    gap: 5px; /* Espaço entre os botões */
     position: absolute; /* Faz com que o bloco de botões fique posicionado em relação ao container pai */
     bottom: 0; /* Fixa o bloco de botões ao final do container */
-    width: 80%; /* Faz com que o bloco de botões ocupe toda a largura do container */
+    width: 70%; /* Faz com que o bloco de botões ocupe toda a largura do container */
     margin: 0; /* Remove qualquer margem extra */
 
 }
