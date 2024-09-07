@@ -31,7 +31,7 @@
                 <ul>
                     <li><a href="#" class="active">Sobre</a></li>
                     <li><a href="pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="#">Blog</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
                 </ul>
             </nav>
             <!-- <div class="btn-contato">
@@ -50,10 +50,10 @@
                     <ul>
                         <li><a href="#" class="active">Sobre</a></li>
                         <li><a href="pages/portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Blog</a></li>
+                        <li><a href="pages/blog.html">Blog</a></li>
                     </ul>
                 </nav>
-            </div><!-- menu-mobile -->
+            </div>
             <div class="overlay-menu" id="overlay-menu"></div>
         </div><!-- interface -->
     </header>
@@ -81,17 +81,21 @@
                         <div class="social-logos">
                             <a href="https://www.linkedin.com/in/railandeivid/" target="_blank">
                                 <img src="https://img.icons8.com/?size=100&id=98960&format=png&color=ffffff" alt="LinkedIn">
+                                <span class="social-name">LinkedIn</span>
                             </a>
                             <a href="https://github.com/RailanDeivid" target="_blank">
                                 <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="GitHub">
+                                <span class="social-name">GitHub</span>
+                                <span><i class="fab fa-facebook-f"></i></span>
                             </a>
                             <a class="medium" href="https://medium.com/@railandeivid" target="_blank">
                                 <img src="https://img.icons8.com/?size=100&id=kXpTR7n8QCEP&format=png&color=ffffff" alt="Medium">
+                                <span class="social-name">Medium</span>
                             </a>
                         </div><!-- social-logos -->
                     </div><!-- txt-topo-site -->
                     <div class="img-topo-site">
-                        <img src="img/me.jpeg" alt="img.me">
+                        <img src="img/me.png" alt="img.me">
                     </div><!--img-topo-site-->
                 </div><!-- flex -->
             </div><!-- interface -->
@@ -157,9 +161,46 @@
         <h2>MEUS PROJETOS RECENTES<span>.</span></h2>
         <div class="container-maior">
             <button class="nav-button left-nav" onclick="navigate(-1)">&#10094;</button>
-            
             <div class="portfolio-container-wrapper">
                 <div class="portfolio-container">
+                    <div class="projetos">
+                        <img src="img/img-projetos/mergeandsplitadata.png" alt="Imagem do Projeto" class="projetos-imagem">
+                        <div class="projetos-detalhes">
+                            <p class="titulo">Aplicativo Web para Separar e Juntar Arquivos CSV e Excel</p>
+                            <p class="descicao">Este aplicativo foi criado para facilitar a manipulação de arquivos CSV e Excel, permitindo que usuários possam, de maneira simples, juntar vários arquivos em um único arquivo unificado ou separar dados dentro de um arquivo existente. Desenvolvido com Python e Streamlit, o app oferece uma interface amigável que simplifica tarefas complexas de manipulação de dados.
+                            <div class="tech-logos">
+                                <img src="img/img-logos/python.png" alt="Python">
+                                <img src="img/img-logos/Streamlit.png" alt="Streamlit">
+                            </div>
+                            <div class="btn">
+                                <a href="https://data-merge-and-split-app.streamlit.app/" target="_blank" >
+                                    <button>Ver Projeto</button>
+                                </a>
+                                <a href="https://github.com/RailanDeivid/Data_Merge_And_Split_App.git" target="_blank">
+                                    <button>&lt; Repositório /&gt;</button>
+                                </a>
+                            </div><!-- btn -->
+                        </div>
+                    </div>
+                    <div class="projetos">
+                        <img src="img/img-projetos/envio de email.png" alt="Imagem do Projeto" class="projetos-imagem">
+                        <div class="projetos-detalhes">
+                            <p class="titulo"> Aplicativos Web para envio de e-mail em massa</p>
+                            <p class="descicao">Este aplicativo foi criado para resolver o problema de envio de e-mails em massa de forma eficiente e automatizada. Desenvolvido com Python e Streamlit, o app oferece uma interface amigável que permite aos usuários enviar e-mails personalizados para uma lista de destinatários com apenas alguns cliques.
+                            <div class="tech-logos">
+                                <img src="img/img-logos/python.png" alt="Python">
+                                <img src="img/img-logos/Streamlit.png" alt="Streamlit">
+                            </div>
+                            <div class="btn">
+                                <a href="https://email-sending.streamlit.app/" target="_blank" >
+                                    <button>Ver Projeto</button>
+                                </a>
+                                <a href="https://github.com/RailanDeivid/email_sending_app.git" target="_blank">
+                                    <button>&lt; Repositório /&gt;</button>
+                                </a>
+                            </div><!-- btn -->
+                        </div>
+                    </div>
                     <div class="projetos">
                         <img src="img/img-projetos/projeto-roubos-carros.png" alt="Imagem do Projeto" class="projetos-imagem">
                         <div class="projetos-detalhes">
@@ -182,13 +223,10 @@
                             </div><!-- btn -->
                         </div>
                     </div>
-                    <!-- Adicionar outro -->
                     <div class="projetos">
                         <img src="img/img-projetos/MercadoLivre_Scraper_and_CarPricePredictor.png" alt="Imagem do Projeto" class="projetos-imagem">
                         <div class="projetos-detalhes">
-                            <p class="titulo"> Scraping anúncios de veículos <br> do MercadoLivre e previsão de preço de vendas.
-                    
-                            </p>
+                            <p class="titulo"> Scraping anúncios de veículos <br> do MercadoLivre e previsão de preço de vendas.</p>
                             <p class="descicao">Projeto de web scraping de anúncios de veículos no Mercado Livre e a previsão de valores de venda utilizando um modelo de machine learning. As etapas incluem a coleta de dados, transformação e limpeza dos dados, análise exploratória, modelagem e por fim, o deploy do modelo usando Streamlit.
                             <br><br>
                             </p>
@@ -214,6 +252,7 @@
                                 </a>
                             </div><!-- btn -->
                         </div>
+
                     </div>
                 </div> 
             </div>
