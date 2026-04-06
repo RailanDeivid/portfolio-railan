@@ -25,18 +25,43 @@ overlay.addEventListener('click', ()=> {
 let currentProjectIndex = 0;
 
 function navigate(direction) {
-    const projects = document.querySelectorAll('.portfolio-container .projetos');
+    const projects = document.querySelectorAll('.portfolio-container-wrapper .projetos');
     const totalProjects = projects.length;
 
-    projects[currentProjectIndex].style.display = 'none'; // Esconde o projeto atual
+    projects[currentProjectIndex].style.display = 'none';
     currentProjectIndex = (currentProjectIndex + direction + totalProjects) % totalProjects;
-    projects[currentProjectIndex].style.display = 'flex'; // Mostra o novo projeto
+    projects[currentProjectIndex].style.display = 'flex';
 }
 
-// Inicializa mostrando apenas o primeiro projeto
+// Inicializa o carrossel apenas na página que tem o wrapper
 document.addEventListener('DOMContentLoaded', function() {
-    const projects = document.querySelectorAll('.portfolio-container .projetos');
-    projects.forEach((project, index) => {
-        project.style.display = index === 0 ? 'flex' : 'none';
+    const wrapper = document.querySelector('.portfolio-container-wrapper');
+    if (wrapper) {
+        const projects = wrapper.querySelectorAll('.projetos');
+        projects.forEach((project, index) => {
+            project.style.display = index === 0 ? 'flex' : 'none';
+        });
+    }
+
+    // Adiciona linha de destaque abaixo dos títulos de seção
+    document.querySelectorAll('section h2').forEach(h2 => {
+        const accent = document.createElement('span');
+        accent.className = 'heading-accent';
+        h2.insertAdjacentElement('afterend', accent);
     });
+
+    // Fade-in ao rolar a página
+    const fadeEls = document.querySelectorAll('.fade-in');
+    if (fadeEls.length > 0) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        fadeEls.forEach(el => observer.observe(el));
+    }
 });

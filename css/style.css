@@ -4,12 +4,39 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-
 }
 
 body{
-    background-color:  #1f1f21;
-    height: 100vh;  
+    background-color: #1f1f21;
+    height: 100vh;
+    /* Gradiente sutil de fundo */
+    background-image: radial-gradient(ellipse at 20% 20%, rgba(1, 68, 150, 0.07) 0%, transparent 60%),
+                      radial-gradient(ellipse at 80% 80%, rgba(3, 82, 179, 0.05) 0%, transparent 60%);
+    background-attachment: fixed;
+}
+
+/* Animação de fade-in no scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fade-in-delay-1 { transition-delay: 0.1s; }
+.fade-in-delay-2 { transition-delay: 0.2s; }
+.fade-in-delay-3 { transition-delay: 0.3s; }
+
+/* Linha de destaque abaixo dos títulos de seção */
+.heading-accent {
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: linear-gradient(90deg, #014496, #0352b3);
+    border-radius: 2px;
+    margin: 8px auto 0;
 }
 
 
@@ -290,15 +317,17 @@ section.topo-do-site .flex{
 }
 
 .topo-do-site .txt-topo-site .cargo{
-    padding: 2px 20px;
-    background: linear-gradient(130.08deg, #1f1f21 0%, #014496 100%);
-    box-shadow: 0px 20px 40px #00000070;
-    border: 1px solid #3b3b3b;
-    border-radius: 10px;
+    display: inline-block;
+    padding: 4px 22px;
+    background: linear-gradient(130.08deg, #1a1a2e 0%, #014496 100%);
+    box-shadow: 0 4px 20px rgba(1, 68, 150, 0.4);
+    border: 1px solid rgba(1, 68, 150, 0.5);
+    border-radius: 30px;
     color: #ffffff;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
 }
 
 .topo-do-site h1{
@@ -318,12 +347,28 @@ section.topo-do-site .flex{
     margin: 10px 0;
     font-size: 18px;
 }
+.topo-do-site .img-topo-site {
+    position: relative;
+}
+
+.topo-do-site .img-topo-site::before {
+    content: '';
+    position: absolute;
+    inset: -20px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(1, 68, 150, 0.45) 0%, transparent 70%);
+    z-index: 0;
+    animation: flutuar-img 2s ease-in-out infinite alternate;
+}
+
 .topo-do-site .img-topo-site img {
     position: relative;
+    z-index: 1;
     animation: flutuar-img 2s ease-in-out infinite alternate;
-    border-radius: 50%; /* Deixa a imagem circular */
+    border-radius: 50%;
     max-width: 400px;
     height: auto;
+    box-shadow: 0 0 40px rgba(1, 68, 150, 0.4), 0 0 80px rgba(1, 68, 150, 0.15);
 }
 
 @keyframes flutuar-img{
@@ -368,11 +413,11 @@ section .btn {
 
 
 section button:hover{
-    transform: translateY(-5px);
+    transform: translateY(-4px);
     color: #ffffff;
     background-color: #014496;
     border: 2px solid #ffffff;
-
+    box-shadow: 0 6px 20px rgba(1, 68, 150, 0.5);
 }
 
 section.topo-do-site .txt-topo-site p a{
@@ -449,11 +494,15 @@ section.skills .txt-skills {
 section.skills .txt-skills .skill {
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    border-radius: 5px;
-    padding: 5px;
-    width: 150px; 
+    align-items: center;
+    border-radius: 12px;
+    padding: 14px 10px;
+    width: 150px;
     text-align: center;
+    background: rgba(1, 68, 150, 0.06);
+    border: 1px solid rgba(1, 68, 150, 0.15);
+    transition: all 0.3s ease;
+    cursor: default;
 }
 
 section.skills .txt-skills .skill img {
@@ -474,14 +523,14 @@ section.skills {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    background-color: #2b2b2e; 
-    border-radius: 5px;
-    padding: 20px;
-    width: 80%; 
+    justify-content: center;
+    background: linear-gradient(135deg, #222226 0%, #1f1f21 100%);
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 85%;
     max-width: 1300px;
-    box-shadow: 0 1px 5px #014496; 
-    margin: 0 auto; 
+    box-shadow: 0 0 0 1px rgba(1, 68, 150, 0.2), 0 4px 30px rgba(1, 68, 150, 0.15);
+    margin: 0 auto;
     margin-bottom: 5%;
 }
 
@@ -493,8 +542,15 @@ section.skills .txt-skills .skill p {
     white-space: nowrap; 
 }
 
+section.skills .txt-skills .skill:hover {
+    background: rgba(1, 68, 150, 0.18);
+    border-color: #014496;
+    transform: translateY(-6px);
+    box-shadow: 0 8px 25px rgba(1, 68, 150, 0.3);
+}
+
 section.skills .txt-skills .skill:hover p {
-    color: #0352b3; 
+    color: #5b9bff;
     transition: .3s;
 }
 
@@ -545,7 +601,16 @@ section.portfolio .projetos {
     padding: 10px;
     max-width: 1300px;
     position: relative;
-    margin: 20px; 
+    margin: 20px;
+    border-radius: 10px;
+    border: 1px solid #2b2b2e;
+    transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+section.portfolio .projetos:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(1, 68, 150, 0.25);
+    border-color: #014496;
 }
 section.portfolio .projetos-imagem {
     max-width: 500px; 
@@ -553,11 +618,37 @@ section.portfolio .projetos-imagem {
 
 section.portfolio .tech-logos {
     display: flex;
-    position: absolute; 
-    top: 20px; 
-    right: 10px; 
+    position: absolute;
+    top: 15px;
+    right: 15px;
     align-items: center;
     padding: 0;
+    gap: 5px;
+}
+
+/* Tech tag pills */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 10px 4px 10px;
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: rgba(1, 68, 150, 0.25);
+    color: #ffffff;
+    padding: 3px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    border: 1px solid #014496;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.tech-tag:hover {
+    background-color: rgba(1, 68, 150, 0.5);
 }
 
 
@@ -730,9 +821,17 @@ section.portfolio-preview .descicao {
 
 section.portfolio-preview .tech-logos {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
+    flex-wrap: wrap;
+    gap: 10px;
     margin-top: 10px;
+}
+
+section.portfolio-preview .tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 8px;
+    padding: 0;
 }
 
 section.portfolio-preview .tech-logos img {

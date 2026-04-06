@@ -1,17 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <!-- GOOGLE FONTS -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-     <!-- GOOGLE FONTS -->
-    <title>Portfolio</title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <!-- GOOGLE FONTS -->
+    <title>Portfolio | Railan Deivid</title>
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/menu.js" defer></script>
 </head>
@@ -22,7 +19,7 @@
             <nav class="menu-desktop">
                 <ul>
                     <li><a href="../index.html">Sobre</a></li>
-                    <li><a href="Portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </nav>
@@ -32,15 +29,55 @@
                 </a>
             </div>btn-contato -->
             <div class="btn-abri-menu" id="btn-menu">
-                <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=014496" alt="">
+                <img src="https://img.icons8.com/?size=100&id=36389&format=png&color=014496" alt="Abrir menu">
             </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <img src="https://img.icons8.com/?size=30&id=95771&format=png&color=014496" alt="Fechar menu">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="../index.html">Sobre</a></li>
+                        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div><!-- interface -->
     </header>
     <main>
-        <section class="portfolio">
+        <section class="portfolio fade-in">
             <h2>PRINCIPAIS PROJETOS<span>.</span></h2>
-            <!-- PROJETO 1 -->
             <div class="portfolio-container">
+            <!-- WHATSAPP AGENT -->
+            <div class="projetos">
+                <img src="../img/img-projetos/whatsapp-agent.png" alt="Imagem do Projeto WhatsApp Agent" class="projetos-imagem">
+                <div class="projetos-detalhes">
+                    <p class="titulo">WhatsApp Agent — Assistente Inteligente <br> com Arquitetura Multi-Agente</p>
+                    <p class="descicao">Assistente inteligente para WhatsApp com arquitetura multi-agente. Um LLM roteador classifica cada mensagem e direciona para o agente especializado correto: Agente SQL (consultas em banco de dados de vendas via Dremio/MySQL), Agente RAG (busca em documentos internos via ChromaDB) ou resposta direta via LLM. Mensagens de áudio são transcritas automaticamente com OpenAI Whisper antes do processamento.
+                    </p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                        <span class="tech-tag">LangChain</span>
+                        <span class="tech-tag">RAG</span>
+                        <span class="tech-tag">ChromaDB</span>
+                        <span class="tech-tag">LLM</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                    </div>
+                    <div class="tech-logos">
+                        <img src="../img/img-logos/python.png" alt="Python">
+                    </div>
+                    <div class="btn">
+                        <a href="https://github.com/RailanDeivid/whatsapp-agent" target="_blank" rel="noopener noreferrer">
+                            <button>&lt; Repositório /&gt;</button>
+                        </a>
+                    </div><!-- btn -->
+                </div>
+            </div><!-- WHATSAPP AGENT -->
+            <!-- PROJETO 1 -->
                 <div class="projetos">
                     <img src="../img/img-projetos/mergeandsplitadata.png" alt="Imagem do Projeto" class="projetos-imagem">
                     <div class="projetos-detalhes">

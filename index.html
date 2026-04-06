@@ -6,9 +6,6 @@
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
     <!-- GOOGLE FONTS -->
     <title>Portfolio Railan Deivid</title>
@@ -55,7 +52,7 @@
         </div><!-- interface -->
     </header>
     <main>
-        <section class="topo-do-site">
+        <section class="topo-do-site fade-in">
             <div class="interface">
                 <div class="flex">
                     <div class="txt-topo-site">
@@ -83,8 +80,7 @@
                             <a href="https://github.com/RailanDeivid" target="_blank">
                                 <img src="https://img.icons8.com/?size=100&id=62856&format=png&color=ffffff" alt="GitHub">
                                 <span class="social-name">GitHub</span>
-                                <span><i class="fab fa-facebook-f"></i></span>
-                            </a>
+                                            </a>
                             <a class="medium" href="https://medium.com/@railandeivid" target="_blank">
                                 <img src="https://img.icons8.com/?size=100&id=kXpTR7n8QCEP&format=png&color=ffffff" alt="Medium">
                                 <span class="social-name">Medium</span>
@@ -97,7 +93,7 @@
                 </div><!-- flex -->
             </div><!-- interface -->
         </section><!-- topo-do-site -->
-        <section class="skills">
+        <section class="skills fade-in fade-in-delay-1">
             <div class="interface">
                 <h2>Skills</h2>
                 <div class="txt-skills">
@@ -154,12 +150,31 @@
             </form>
         </div>
     </section> -->
-    <section class="portfolio-preview">
+    <section class="portfolio-preview fade-in fade-in-delay-2">
         <h2>MEUS PROJETOS RECENTES<span>.</span></h2>
         <div class="container-maior">
             <button class="nav-button left-nav" onclick="navigate(-1)">&#10094;</button>
             <div class="portfolio-container-wrapper">
                 <div class="portfolio-container">
+                    <div class="projetos">
+                        <img src="img/img-projetos/whatsapp-agent.png" alt="WhatsApp Agent" class="projetos-imagem">
+                        <div class="projetos-detalhes">
+                            <p class="titulo">WhatsApp Agent — Assistente Inteligente com Multi-Agente</p>
+                            <p class="descicao">Assistente para WhatsApp com arquitetura multi-agente: roteamento inteligente para Agente SQL, Agente RAG (documentos via ChromaDB) ou LLM direto. Transcrição de áudio com Whisper. Desenvolvido com FastAPI, LangChain e Docker.
+                            </p>
+                            <div class="tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">LangChain</span>
+                                <span class="tech-tag">RAG</span>
+                                <span class="tech-tag">LLM</span>
+                            </div>
+                            <div class="btn">
+                                <a href="https://github.com/RailanDeivid/whatsapp-agent" target="_blank" rel="noopener noreferrer">
+                                    <button>&lt; Repositório /&gt;</button>
+                                </a>
+                            </div><!-- btn -->
+                        </div>
+                    </div>
                     <div class="projetos">
                         <img src="img/img-projetos/mergeandsplitadata.png" alt="Imagem do Projeto" class="projetos-imagem">
                         <div class="projetos-detalhes">
